@@ -1,0 +1,112 @@
+body {
+	font-family: "Book Antiqua";
+	background-color: #FFC0FF;
+	text-align:  center;
+	width: 100%;
+}
+nav {
+	font-family: "Buxton Sketch";
+	font-size: 30px;
+	letter-spacing: 5px;
+
+}
+ul {
+    list-style-type: none;
+    position: relative;
+    width: 100%;
+    top: 0;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+ 	display: inline;
+}
+
+li a {
+    display: inline-block;
+    padding: 15px;
+    text-decoration: none;
+    font-variant: small-caps;
+    color: white;
+    border-radius: 30px;
+}
+li a:hover {background-color: #111;}
+li a:active {background-color: #222;}
+
+
+
+
+/***********************projekty***********************/
+.project {
+	border:5px solid;
+	border-radius: 20px;
+	margin: 20px 5px;
+	height: 200px;
+}
+/***********************about***********************/
+#aboutMenu > img {
+	width: 100%;
+}
+.aboutMe {   
+	min-height: auto;
+	display: block;
+	border: 15px solid white;
+	border-radius: 50px 10px;
+	margin-top: 10px;
+    padding: 10px;
+    background-size: 100%;
+    color: white;
+    font-weight: bold;
+    font-family: "Century Gothic";
+    font-size: 20px;
+    letter-spacing: 2px;
+/*    float: left;*/
+}
+#one {background-image: url('img/about/fais.jpg');}
+#two {background-image: url('img/about/design.jpg');}
+#three {background-image: url('img/about/dream.png');}
+#four {background-image: url('img/about/sport.png');}
+/***********************kontakt***********************/
+/*dane kontaktowe*/
+address {
+	font-size: 18px;
+	font-family: "SketchFlow Print";
+	font-weight: bold;
+	line-height: 30px;
+	padding-top: 10px;
+}
+
+/*formularz*/
+input {
+	width: 90%;
+	margin: 5%;
+	border: 2px solid black;
+	border-radius: 20px;
+	padding: 10px;
+}
+#name, #msg {
+	margin-bottom: 12px;
+}
+#msg {
+	height: 100px;
+}
+
+/*ikonki social media*/
+#fb, #in, #yt {
+	width: 30%;
+	display:inline;
+}
+#fb {color: #3b5998;}
+#in {color: #007bb6;}
+#yt {color: #bb0000;}
+
+#fb:hover, #in:hover, #yt:hover {opacity: 0.7;}
+
+footer {
+	margin-top: 5%;
+	clear: both;
+	/*position:fixed;*/
+   bottom:0;
+}
