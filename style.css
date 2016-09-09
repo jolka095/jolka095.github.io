@@ -81,13 +81,13 @@ address {
 /*formularz*/
 input {
 	width: 90%;
-	margin: 5%;
+	margin: 2%;
 	border: 2px solid black;
 	border-radius: 20px;
 	padding: 10px;
 }
 #name, #msg {
-	margin-bottom: 12px;
+	margin-bottom: 1px;
 }
 #msg {
 	height: 100px;
