@@ -8,8 +8,8 @@ nav {
 	font-family: "Buxton Sketch";
 	font-size: 30px;
 	letter-spacing: 5px;
-
 }
+
 ul {
     list-style-type: none;
     position: relative;
@@ -34,9 +34,6 @@ li a {
 }
 li a:hover {background-color: #111;}
 li a:active {background-color: #222;}
-
-
-
 
 /***********************projekty***********************/
 .project {
@@ -68,6 +65,7 @@ li a:active {background-color: #222;}
 #two {background-image: url('img/about/design.jpg');}
 #three {background-image: url('img/about/dream.png');}
 #four {background-image: url('img/about/sport.png');}
+
 /***********************kontakt***********************/
 /*dane kontaktowe*/
 address {
@@ -80,32 +78,51 @@ address {
 
 /*formularz*/
 input {
-	width: 90%;
 	margin: 2%;
-	border: 2px solid black;
+	border: 5px solid #FF66FF;
 	border-radius: 20px;
 	padding: 10px;
+}
+#name {
+	width: 50%;
 }
 #name, #msg {
 	margin-bottom: 1px;
 }
 #msg {
+	width: 70%;
 	height: 100px;
 }
+button, input {
+	font-family: "Buxton Sketch";
+	font-size: 20px;
+}
+button {
+	width: 15%;
+	background-color: #FF66FF;
+	border-radius: 70px 70px 70px 70px;
+	-moz-border-radius: 70px 70px 70px 70px;
+	-webkit-border-radius: 70px 70px 70px 70px;
+	border: 5px solid #FF33FF;
 
+    padding: 15px;
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    
+	transition: all .2s ease-in-out;
+}
+button:hover {
+	transform: scale(1.2);
+}
 /*ikonki social media*/
 
-/*#fb, #in, #yt {
-	width: 30%;
-	display:inline;
-}
-#fb {color: #3b5998;}
-#in {color: #007bb6;}
-#yt {color: #bb0000;}
-
-#fb:hover, #in:hover, #yt:hover {opacity: 0.7;}*/
-.social > img {
+#social > a {
 	text-decoration: none;
+}
+
+#social > a:hover {
+	opacity: 0.7;
 }
 
 footer {
