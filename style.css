@@ -8,6 +8,7 @@ nav {
 	font-family: "Buxton Sketch";
 	font-size: 30px;
 	letter-spacing: 5px;
+	margin-bottom: 10px;
 }
 
 ul {
@@ -32,8 +33,8 @@ li a {
     color: white;
     border-radius: 30px;
 }
-li a:hover {background-color: #111;}
-li a:active {background-color: #222;}
+li a:hover {background-color: #ffa7ff;}
+li a:active {background-color: #ff8dff;}
 
 /***********************projekty***********************/
 .project {
@@ -43,28 +44,36 @@ li a:active {background-color: #222;}
 	height: 200px;
 }
 /***********************about***********************/
+
+#aboutMenu > div, #aboutMenu > img {
+	width: 50%;
+	float: left;
+    margin: 0 auto;
+}
 #aboutMenu > img {
-	width: 100%;
+	border-radius: 30px;
 }
 .aboutMe {   
-	min-height: auto;
+	min-height: 50px;
 	display: block;
-	border: 15px solid white;
-	border-radius: 50px 10px;
+
+	border-radius: 100px 100px;
 	margin-top: 10px;
-    padding: 10px;
-    background-size: 100%;
-    color: white;
+    padding: 25px;
+
+    background-color: rgba(255, 255, 255, 0.3);
+
+	-webkit-box-shadow: inset 0px 0px 53px 10px rgba(255,141,255,1);
+	-moz-box-shadow: inset 0px 0px 53px 10px rgba(255,141,255,1);
+	box-shadow: inset 0px 0px 53px 10px rgba(255,141,255,1);
+}
+.aboutMe > h1 {
+	color: #cc0099;
     font-weight: bold;
     font-family: "Century Gothic";
     font-size: 20px;
     letter-spacing: 2px;
-/*    float: left;*/
 }
-#one {background-image: url('img/about/fais.jpg');}
-#two {background-image: url('img/about/design.jpg');}
-#three {background-image: url('img/about/dream.png');}
-#four {background-image: url('img/about/sport.png');}
 
 /***********************kontakt***********************/
 /*dane kontaktowe*/
@@ -112,21 +121,19 @@ button {
     
 	transition: all .2s ease-in-out;
 }
-button:hover {
-	transform: scale(1.2);
-}
+button:hover {transform: scale(1.2);}
+button:active {background-color: #FF99FF;}
+
 /*ikonki social media*/
 
 #social > a {
 	text-decoration: none;
 }
 
-#social > a:hover {
-	opacity: 0.7;
-}
+#social > a:hover {opacity: 0.7;}
 
 footer {
-	margin-top: 5%;
+	margin-top: 15px;
 	clear: both;
 	/*position:fixed;*/
    bottom:0;
