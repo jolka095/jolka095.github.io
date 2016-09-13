@@ -1,11 +1,12 @@
 body {
-	font-family: "Book Antiqua";
+	font-family: 'Alegreya', serif;
 	background-color: #FFC0FF;
 	text-align:  center;
+	margin: 0;
 	width: 100%;
 }
 nav {
-	font-family: "Buxton Sketch";
+	font-family: 'Tillana', cursive;
 	font-size: 30px;
 	letter-spacing: 5px;
 	margin-bottom: 10px;
@@ -14,17 +15,13 @@ nav {
 ul {
     list-style-type: none;
     position: relative;
-    width: 100%;
     top: 0;
     margin: 0;
     padding: 0;
     overflow: hidden;
 }
 
-li {
- 	display: inline;
-}
-
+li {display: inline;}
 li a {
     display: inline-block;
     padding: 15px;
@@ -70,19 +67,18 @@ li a:active {background-color: #ff8dff;}
 .aboutMe > h1 {
 	color: #cc0099;
     font-weight: bold;
-    font-family: "Book Antiqua";
-    font-size: 20px;
+	font-family: 'Amatic SC', cursive;
+    font-size: 25px;
     letter-spacing: 2px;
 }
 
 /***********************kontakt***********************/
 /*dane kontaktowe*/
 address {
-	font-size: 18px;
-	font-family: "SketchFlow Print";
-	font-weight: bold;
-	line-height: 30px;
-	padding-top: 10px;
+	font-family: 'Courgette', cursive;
+	font-size: 25px;
+	line-height: 1.7;
+	padding-top: 5px;
 }
 
 /*formularz*/
@@ -103,7 +99,7 @@ input {
 	height: 100px;
 }
 button, input {
-	font-family: "Buxton Sketch";
+	font-family: 'Tillana', cursive;
 	font-size: 20px;
 }
 button {
@@ -129,12 +125,11 @@ button:active {background-color: #FF99FF;}
 #social > a {
 	text-decoration: none;
 }
-
 #social > a:hover {opacity: 0.7;}
 
 footer {
 	margin-top: 15px;
+	padding: 5px;
 	clear: both;
-	/*position:fixed;*/
-   bottom:0;
+	bottom:0;
 }
