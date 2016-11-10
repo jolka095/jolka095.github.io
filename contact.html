@@ -3,9 +3,7 @@
 <head>
 	<meta charset="utf-8"/>
 	<meta name="author" content="Jolanta Filipiak">
-	<!--[if lt IE 9]>
-		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-	<![endif]-->
+
 	<link href="https://fonts.googleapis.com/css?family=Alegreya|Amatic+SC|Courgette|Tillana" rel="stylesheet">
 	<link rel="stylesheet" href="style.css"/>
 	<title>My website</title>
@@ -13,24 +11,27 @@
 <body>
 	<nav>
 		<ul>
-			<li ><a href="index.html">Home</a></li>
+			<li ><a href="index.html" id="home">Home</a></li>
 			<li ><a href="about.html">About</a></li>
 			<li ><a href="projects.html">Projects</a></li>
 			<li "><a href="contact.html">Contact</a></li>
 		</ul>
 	</nav>			
 	<main>
+
 		<address>
 			<p>Jolanta Filipiak</br>
 			jolantafilipiak7@gmail.com</br>
 			Cracow, Poland</p>
 		</address>
 		<form>
-			<input type="text" id="name" placeholder="Name">
-			<button>SEND</button>
-			<input type="text" id="msg"><br><br>
-			
+			<input type="text" id="name" placeholder="Name"><br>
+			<textarea type="text" id="msg"></textarea><br>
+			<button>SEND</button><br><br>
+
 		</form>
+
+		<h1>Find me on...</h1>
 		<div id="social">
 		<!-- social icons from: https://www.iconfinder.com/iconsets/social-flat -->
 			<a href="#">

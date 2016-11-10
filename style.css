@@ -1,15 +1,28 @@
 body {
 	font-family: 'Alegreya', serif;
-	background-color: #FFC0FF;
+	background: url('img/t1.jpg') no-repeat fixed center;
+	background-size:cover;
+
 	text-align:  center;
 	margin: 0;
 	width: 100%;
 }
+
+/*********************** menu ***********************/
 nav {
 	font-family: 'Tillana', cursive;
 	font-size: 30px;
-	letter-spacing: 5px;
-	margin-bottom: 10px;
+	letter-spacing: 10px;
+}
+
+li a {
+	display: inline-block;
+	text-decoration: none;
+	font-variant: small-caps;
+	font-weight: bolder;
+	padding: 15px;
+	color: white;
+	border-radius: 30px;
 }
 
 ul {
@@ -22,108 +35,72 @@ ul {
 }
 
 li {display: inline;}
-li a {
-    display: inline-block;
-    padding: 15px;
-    text-decoration: none;
-    font-variant: small-caps;
-    color: white;
-    border-radius: 30px;
-}
-li a:hover {background-color: #ffa7ff;}
-li a:active {background-color: #ff8dff;}
+li a:hover {background-color: rgba(255, 167, 255, 0.3); }
+li a:active {background-color: rgba(255, 167, 255, 0.2);}
 
-/***********************projekty***********************/
-.project {
+/*********************** future projects ***********************/
+
+/*.project {
 	border:5px solid;
 	border-radius: 20px;
 	margin: 20px 5px;
 	height: 200px;
-}
+}*/
+
 /***********************about***********************/
-
-#aboutMenu > div, #aboutMenu > img {
-	width: 50%;
-	float: left;
-    margin: 0 auto;
-}
-#aboutMenu > img {
-	border-radius: 30px;
-}
-.aboutMe {   
-	min-height: 50px;
-	display: block;
-
-	border-radius: 100px 100px;
-	margin-top: 10px;
-    padding: 25px;
-
-    background-color: rgba(255, 255, 255, 0.3);
-
-	-webkit-box-shadow: inset 0px 0px 53px 10px rgba(255,141,255,1);
-	-moz-box-shadow: inset 0px 0px 53px 10px rgba(255,141,255,1);
-	box-shadow: inset 0px 0px 53px 10px rgba(255,141,255,1);
-}
-.aboutMe > h1 {
-	color: #cc0099;
-	font-family: 'Tillana', cursive;
-    font-size: 25px;
-    letter-spacing: 2px;
+h3 p {
+	background-color: rgba(255, 167, 255, 0.7);
+	padding: 15px;
+	border-radius: 20px;
 }
 
 /***********************kontakt***********************/
 /*dane kontaktowe*/
-address {
+address, textarea {	
 	font-family: 'Courgette', cursive;
-	font-size: 25px;
 	line-height: 1.7;
 	padding-top: 5px;
 }
 
 /*formularz*/
-input {
-	margin: 2%;
-	border: 5px solid #FF66FF;
+
+input, textarea {
+	border: 5px solid rgba(255, 167, 255, 1);
 	border-radius: 20px;
+}
+
+button, input, textarea {
 	padding: 10px;
+	margin-top: 5px;
 }
-#name {
-	width: 50%;
-}
-#name, #msg {
-	margin-bottom: 1px;
-}
-#msg {
-	width: 70%;
-	height: 100px;
-}
+
 button, input {
 	font-family: 'Tillana', cursive;
 	font-size: 20px;
 }
+
 button {
-	width: 15%;
-	background-color: #FF66FF;
+	/*width: 15%;*/
+	background-color: #FF9DFF;
 	border-radius: 70px 70px 70px 70px;
 	-moz-border-radius: 70px 70px 70px 70px;
 	-webkit-border-radius: 70px 70px 70px 70px;
-	border: 5px solid #FF33FF;
+	border: 5px solid #FD91FD;
 
-    padding: 15px;
+    /*padding: 15px;*/
     color: white;
     text-decoration: none;
     cursor: pointer;
     
 	transition: all .2s ease-in-out;
 }
+
 button:hover {transform: scale(1.2);}
 button:active {background-color: #FF99FF;}
 
-/*ikonki social media*/
+/*ikonki social media*/ 
 
-#social > a {
-	text-decoration: none;
-}
+#social > a {text-decoration: none;}
 #social > a:hover {opacity: 0.7;}
 
 footer {
@@ -131,4 +108,103 @@ footer {
 	padding: 5px;
 	clear: both;
 	bottom:0;
+}
+
+/********************** RWD #1 ***************************/
+
+@media screen and (max-width: 600px){
+
+	h3 img {width: 95%;	}
+	h1 {font-size: 50px;}
+	h3 {font-size: 35px;}
+	address, textarea {font-size: 20px;}
+	button, input, textarea {width: 85%;}
+	#msg {height: 150px;}
+}
+
+/********************** RWD #1 & #2 ***************************/
+@media screen and (max-width: 900px){
+	#home { background-color: rgba(255, 157, 255, 0.7);	}
+	#homeImg{
+		width: 95%;
+		margin-top: 20px;
+		border-radius: 30px;
+	}
+	h3 img {border-radius: 30px;}
+	li a {
+		width: 100%;
+	    float: none;
+		background-color: rgba(255, 167, 255, 0.5);
+	}
+}
+
+/********************** RWD #2 ***************************/
+@media screen and (min-width: 601px) and (max-width: 900px) {
+	
+	h3 img {width: 80%; }
+	h1 {font-size: 40px;}
+	h3 {font-size: 25px;}
+	address, textarea {font-size: 25px;}
+	button, input, textarea {width: 80%;}
+	#msg {height: 200px;}
+
+	#part01, #part02, #part03, #part04 {
+		margin-right: 30px;
+		margin-left: 30px;
+	}
+
+	#part02 img, #part03 img {
+		width: 40%;
+	/*float: left;*/
+		margin-bottom: 20px;
+		border-radius: 10px;
+	}
+}
+/********************** RWD #3 ***************************/
+@media screen and (min-width : 901px) and (max-width : 1224px) {
+
+	#part01, #part02, #part03, #part04 {
+		margin-right: 30px;
+		margin-left: 30px;
+	}
+	button, input, textarea {width: 80%;}
+}
+
+/********************** RWD #3 & #4 ***************************/
+@media screen and (min-width : 901px) {
+
+	ul {background-color: rgba(255, 157, 255, 0.6);	}
+
+	#homeImg{
+		margin-top: 20px;
+		width: 60%;
+		border-radius: 30px;
+	}
+
+	h1 {font-size: 50px;}
+	h3 {font-size: 30px;}
+
+	#part02 img, #part03 img {
+		width: 40%;
+		/*float: left;*/
+		margin-bottom: 20px;
+		border-radius: 10px;
+	}
+
+	h3 img {
+		width: 80%;
+		border-radius: 30px;
+	}
+	address, textarea {	font-size: 25px;}
+	#msg {height: 200px;}
+}
+
+/********************** RWD #4 ***************************/
+@media screen and (min-width : 1224px) {
+
+	#part01, #part02, #part03, #part04 {
+		margin-right: 20%;
+		margin-left: 20%;
+	}
+	button, input, textarea {width: 50%;}
 }
