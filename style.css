@@ -8,6 +8,13 @@ body {
 	width: 100%;
 }
 
+h1 {
+	margin: 0;
+	padding-bottom: 10px;
+	position: relative;
+
+}
+
 /*********************** menu ***********************/
 nav {
 	font-family: 'Tillana', cursive;
@@ -15,17 +22,17 @@ nav {
 	letter-spacing: 10px;
 }
 
-li a {
+nav li a {
 	display: inline-block;
 	text-decoration: none;
 	font-variant: small-caps;
 	font-weight: bolder;
-	padding: 15px;
+	padding: 10px;
 	color: white;
-	border-radius: 30px;
+/*	border-radius: 30px;*/
 }
 
-ul {
+nav > ul {
     list-style-type: none;
     position: relative;
     top: 0;
@@ -34,18 +41,76 @@ ul {
     overflow: hidden;
 }
 
-li {display: inline;}
-li a:hover {background-color: rgba(255, 167, 255, 0.3); }
-li a:active {background-color: rgba(255, 167, 255, 0.2);}
+nav li {display: inline;}
+nav li a:hover {background-color: rgba(255, 167, 255, 0.3); }
+nav li a:active {background-color: rgba(255, 167, 255, 0.2);}
+
+/*********************** home ***********************/
+
+.fly-in-text {
+    list-style: none;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+.fly-in-text li {
+    display: inline-block;
+    margin-right: 50px;
+    font-family: "Alegreya";
+    font-weight: 300;
+    font-size: 5em;
+    color: #fff;
+    opacity: 1;
+    transition: all 2.5s ease;
+}
+.fly-in-text li:last-child {
+    margin-right: 0;
+}
+.fly-in-text.hidden li {
+    opacity: 0;
+}
+.fly-in-text.hidden li:nth-child(1) { transform: translateX(-200px) translateY(-200px); }
+.fly-in-text.hidden li:nth-child(2) { transform: translateX(20px) translateY(100px); }
+.fly-in-text.hidden li:nth-child(3) { transform: translateX(-150px) translateY(-80px); }
+.fly-in-text.hidden li:nth-child(4) { transform: translateX(10px) translateY(-200px); }
+.fly-in-text.hidden li:nth-child(5) { transform: translateX(-300px) translateY(200px); }
+.fly-in-text.hidden li:nth-child(6) { transform: translateX(20px) translateY(-20px); }
+.fly-in-text.hidden li:nth-child(7) { transform: translateX(30px) translateY(200px); }
 
 /*********************** future projects ***********************/
 
 /*.project {
-	border:5px solid;
+	border: 5px solid;
 	border-radius: 20px;
 	margin: 20px 5px;
 	height: 200px;
 }*/
+
+.project:nth-child(even) {
+    clear: both;
+}
+
+.project {
+    border-radius: 20px;
+	margin: 20px 15px;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+.project:hover {
+	cursor: pointer;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+.project p {
+	font-variant: small-caps;
+	letter-spacing: 7px;
+	font-weight: bolder;
+	font-size: 20px;
+	padding: 20px;
+}
+
+.projectGallery {
+	display: none;
+}
 
 /***********************about***********************/
 h3 p {
@@ -54,12 +119,36 @@ h3 p {
 	border-radius: 20px;
 }
 
+.slideShow > li {
+    display:none;
+    list-style-type: none;   
+}
+
 /***********************kontakt***********************/
 /*dane kontaktowe*/
 address, textarea {	
 	font-family: 'Courgette', cursive;
 	line-height: 1.7;
 	padding-top: 5px;
+}
+address p {
+	background-color: rgba(255, 167, 255, 0.7);
+	padding: 15px;
+	border-radius: 20px;
+	display: inline-block;
+
+	position: relative;
+	animation-name: animAddress;
+	animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+
+/* The animation code */
+@keyframes animAddress {
+	0%  {border-radius: 20px;}
+    50%  {border-radius: 100px;}
+    100%  {border-radius: 20px;}
+
 }
 
 /*formularz*/
@@ -110,6 +199,20 @@ footer {
 	bottom:0;
 }
 
+/* The animation code */
+@keyframes movingText {
+	0%  {top:-10px;}
+    50%  {top:10px;}
+    100%  {top:-10px;}
+}
+
+h1 {
+	animation-name: movingText;
+	animation-duration: 3s;
+    animation-iteration-count: infinite;
+}
+	
+
 /********************** RWD #1 ***************************/
 
 @media screen and (max-width: 600px){
@@ -120,6 +223,7 @@ footer {
 	address, textarea {font-size: 20px;}
 	button, input, textarea {width: 85%;}
 	#msg {height: 150px;}
+
 }
 
 /********************** RWD #1 & #2 ***************************/
@@ -131,7 +235,7 @@ footer {
 		border-radius: 30px;
 	}
 	h3 img {border-radius: 30px;}
-	li a {
+	nav li a {
 		width: 100%;
 	    float: none;
 		background-color: rgba(255, 167, 255, 0.5);
@@ -173,7 +277,7 @@ footer {
 /********************** RWD #3 & #4 ***************************/
 @media screen and (min-width : 901px) {
 
-	ul {background-color: rgba(255, 157, 255, 0.6);	}
+	nav ul {background-color: rgba(255, 157, 255, 0.6);	}
 
 	#homeImg{
 		margin-top: 20px;

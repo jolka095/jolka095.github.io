@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="pl">
 <head>
@@ -5,6 +6,7 @@
 	<meta name="author" content="Jolanta Filipiak">
 
 	<link href="https://fonts.googleapis.com/css?family=Alegreya|Amatic+SC|Courgette|Tillana" rel="stylesheet">
+
 	<link rel="stylesheet" href="style.css"/>
 	<title>My website</title>
 </head>
@@ -13,18 +15,30 @@
 	<nav>
 		<ul>
 			<li ><a href="index.html" id="home">Home</a></li>
-			<li ><a href="about.html">About</a></li>
-			<li ><a href="projects.html">Projects</a></li>
-			<li "><a href="contact.html">Contact</a></li>
+			<li ><a href="about.html" id="aboutBtn">About</a></li>
+			<li ><a href="projects.html" id="projectsBtn">Projects</a></li>
+			<li ><a href="contact.html" id="contactBtn">Contact</a></li>
 		</ul>	
 	</nav>	
 
-	<img  id="homeImg" src="img/f.jpg"/>
-	<h1>Welcome to my webpage &hearts;</h1>
+	<main>
+		<img  id="homeImg" src="img/ff.jpg"/>
+			<ul class="fly-in-text hidden">
+				<li>W</li>
+				<li>E</li>
+				<li>L</li>
+				<li>C</li>
+				<li>O</li>
+				<li>M</li>
+				<li>E</li>
+			</ul>
+
+	</main>
 
 	<footer>
 		<p><i>All rights reserved &copy; 2016</i></p>
 	</footer>
-	<!-- <script src="script.js"></script> -->
+	<script src="jquery-3.1.1.min.js"></script>
+	<script src="script.js"></script>
 </body>
 </html>
