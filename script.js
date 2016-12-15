@@ -33,6 +33,9 @@ $(function() {
 		$('.fly-in-text').removeClass('hidden'); 
 	}, 1000);
 
+
+	// project buttons
+
 	$(".project p").click(function() {
 		alert("No content, sorry!");	
 	}); 
